@@ -25,3 +25,15 @@ after the apply phase we will check the current state.
 Finally we will run a destroy operation to clean up the environment.
 
 `C:\ terraform destroy`
+
+## Basic Terraform Module structure
+
+|-- Readme.md
+
+|-- main.tf
+
+|-- variables.tf
+
+|-- outputs.tf
+
+## Complete Terraform module
