@@ -28,5 +28,8 @@ resource "azurerm_storage_account" "sa" {
   account_replication_type = var.azurerm_storage_account_replication_type
   min_tls_version = var.azurerm_storage_account_min_tls_version
   resource_group_name = "${var.azurerm_resource_group}tfbasic"
+  depends_on = [
+    azurerm_resource_group.rg
+  ]
 
 }
