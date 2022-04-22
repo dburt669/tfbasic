@@ -33,3 +33,9 @@ resource "azurerm_storage_account" "sa" {
   ]
 
 }
+
+resource "azurerm_storage_container" "sac" {
+  name                  = "${var.azurerm_storage_account_container_prefix}${var.azurerm_storage_account_container_name}"
+  container_access_type = "container"
+  storage_account_name  = var.azurerm_storage_account_name
+}

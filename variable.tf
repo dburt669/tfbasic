@@ -38,3 +38,13 @@ variable "azurerm_storage_account_min_tls_version" {
   type = string
   default = "TLS1_2"
 }
+variable "azurerm_storage_account_container_prefix" {
+  description = "Azure storage account container name prefix"
+  type        = string
+  default     = "tfstate"
+}
+
+variable "azurerm_storage_account_container_name" {
+  description = "Azure storage account container name"
+  type        = string
+}
